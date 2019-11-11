@@ -29,7 +29,7 @@ const Index = () => {
             <hr />
             <h3>TODO</h3>
             <ul>
-                <li>배포</li>
+                <li><strike>배포</strike> -> 완료</li>
                 <li>디자인</li>
             </ul>
         </div>
