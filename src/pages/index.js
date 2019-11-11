@@ -31,6 +31,7 @@ const Index = () => {
             <ul>
                 <li><strike>배포</strike> -> 완료</li>
                 <li>디자인</li>
+                <li>GA달기</li>
             </ul>
         </div>
     )
