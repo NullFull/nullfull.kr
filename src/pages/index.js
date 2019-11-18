@@ -8,6 +8,10 @@ const Index = () => {
             <h1>널채움</h1>
             <hr />
             <div>
+
+            </div>
+            <hr />
+            <div>
                 <h3>웹사이트의 목적 (+리뉴얼의 목적)</h3>
                 <ul>
                     <li>웹사이트를 보고 모임에 참석하고 싶게 한다</li>
@@ -30,9 +34,21 @@ const Index = () => {
             <h3>TODO</h3>
             <ul>
                 <li><strike>배포</strike> -> 완료</li>
-                <li>디자인</li>
+                <li>
+                    디자인
+                    <ul>
+                        <li>로고</li>
+                        <li>리드 이미지</li>
+                        <li><strike>푸터</strike></li>
+                        <li>또 뭐 해야되지...</li>
+                    </ul>
+                </li>
                 <li>GA달기</li>
             </ul>
+
+            <footer>
+                <p>All Right Reserved? 2019. Nullfull. </p>
+            </footer>
         </div>
     )
 }
