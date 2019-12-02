@@ -1,10 +1,35 @@
 html, body, div {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: sans-serif;
+    line-height: 1.6;
+}
+
+.lead-image {
+    width: 612px;
+    max-width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+
+header {
+    /*height: 95px;*/
+    padding: 10px;
+    text-align: center;
+}
+
+main section {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+ul li {
+
 }
 
 footer {
