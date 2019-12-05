@@ -6,14 +6,14 @@ const Index = () => {
     return (
         <div>
             <header>
-                <h1>널채움/* TODO : 여기에 로고 이미지 들어감 */</h1>
                 <h3>이 웹사이트는 리뉴얼 중이랍니다.</h3>
+                <h1>/* TODO : 여기에 로고 이미지 들어감 */</h1>
                 <p><strike>하는 일 없이</strike> 모여서 감자튀김 먹는 모임</p>
             </header>
             <hr />
             <main>
                 <section className="lead-image">
-                    /* 여기에 Lead 이미지 (감자튀김) 들어감 */
+                    /* TODO : 여기에 Lead 이미지 (감자튀김) 들어감 */
                 </section>
                 <hr />
                 <section>
@@ -22,11 +22,25 @@ const Index = () => {
                 </section>
                 <hr />
                 <section>
+                    <h3>대화방 참여</h3>
+                    <p>/* TODO : 여기에 슬랙 가입 링크 */</p>
+                    <p>/* TODO : 여기에 슬랙 통계 */</p>
+                </section>
+                <hr />
+                <section>
+                    <h3>우리가 한 짓들</h3>
+                    <ul>
+                        <li>/* TODO : 여기에 저장소 주소랑 설명 (깃헙에서 설명까지 읽어와서 붙이면 될 듯) */</li>
+                    </ul>
+                </section>
+                <hr />
+                <section>
                     <h3>웹사이트의 목적 (리뉴얼의 목적)</h3>
                     <ul>
                         <li>웹사이트를 보고 모임에 참석하고 싶게 한다. -> 다음 모임 공지 표시</li>
-                        <li>우리가 그동안 만든거 자랑한다</li>
-                        <li>모임에 안와본 사람이 보고 당황하지 않아야 함</li>
+                        <li>우리가 그동안 만든거 자랑한다 -> 깃헙 저장소 + 설명</li>
+                        <li>슬랙 들어오게 만든다 -> 슬랙 통계</li>
+                        <li>모임에 안와본 사람이 보고 당황하지 않아야 함 -> 예쁜 디자인</li>
                     </ul>
                     <h3>TODO</h3>
                     <ul>
@@ -42,7 +56,7 @@ const Index = () => {
                         </li>
                         <li>GA달기</li>
                         <li>
-                            들어갈 내용
+                            들어갈 내용 넣기
                             <ul>
                                 <li>슬랙 초대 링크</li>
                                 <li>페이스북 링크</li>
