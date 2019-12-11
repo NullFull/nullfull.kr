@@ -21,7 +21,7 @@ const Index = () => {
                 </section>
                 <hr />
                 <section>
-                    <h2><a href="https://www.facebook.com/groupnullfull/">Facebook NullFull 그룹페이지</a></h2>
+                    <h2><a href="https://www.facebook.com/groupnullfull/" target="_blank">Facebook NullFull 그룹페이지</a></h2>
                     <h3>다음 모임 공지</h3>
                     <p>/* TODO : 여기에 다음 이벤트 공지를 페이스북에서 긁어와서 표시 */</p>
                 </section>
