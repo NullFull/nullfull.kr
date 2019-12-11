@@ -53,13 +53,13 @@ const Index = () => {
                         <li>
                             디자인
                             <ul>
-                                <li>로고</li>
-                                <li>리드 이미지</li>
+                                <li><strike>로고</strike></li>
+                                <li>리드 이미지 -> 감튀 사진 골라야함</li>
                                 <li><strike>푸터</strike></li>
-                                <li>또 뭐 해야되지...</li>
+                                <li>좀 예쁘게...ㅠ</li>
                             </ul>
                         </li>
-                        <li>GA달기</li>
+                        <li><strike>GA달기</strike></li>
                         <li>
                             들어갈 내용 넣기
                             <ul>
