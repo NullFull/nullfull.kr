@@ -2,11 +2,12 @@ import fetch from 'node-fetch'
 import {parse} from 'node-html-parser'
 
 
-const BASE_URL = 'https://m.facebook.com/'
+const BASE_URL = 'https://m.facebook.com'
 
 
 const parseEvent = async path => {
-    const response = await fetch(BASE_URL + path)
+    const url = BASE_URL + path
+    const response = await fetch(url)
     const html = await response.text()
     const doc = parse(html)
     const summary = doc.querySelector('#event_summary')
@@ -18,7 +19,7 @@ const parseEvent = async path => {
     })
 
     return new Promise((resolve, reject) => {
-        resolve({date, place})
+        resolve({url, date, place})
     })
 }
 
@@ -41,6 +42,7 @@ export async function handler (event, context, callback) {
 
     callback(null, {
         statusCode: 200,
+        headers: {},
         body: JSON.stringify({
             events
         })

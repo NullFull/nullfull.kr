@@ -1,6 +1,7 @@
 import React from 'react'
 import Logo from '../assets/nullfull-logo.svg'
-import GitHubRepos from '../components/GitHubRepos.js'
+import GitHubRepos from '../components/GitHubRepos'
+import FacebookEvents from '../components/FacebookEvents'
 import './style.css'
 
 
@@ -23,7 +24,7 @@ const Index = () => {
                 <hr />
                 <section>
                     <h3>다음 모임 공지</h3>
-                    <p>/* TODO : 여기에 다음 이벤트 공지를 페이스북에서 긁어와서 표시 */</p>
+                    <FacebookEvents />
                     <p><a href="https://www.facebook.com/groupnullfull/" target="_blank">Facebook에서 구독하기</a></p>
                 </section>
                 <hr />
