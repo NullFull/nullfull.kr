@@ -25,7 +25,7 @@ const Index = () => {
                 <hr />
                 <section>
                     <h3>대화방 참여</h3>
-                    <p>/* TODO : 여기에 슬랙 가입 링크 */</p>
+                    <p><a href="https://nullfull-slack-invite.herokuapp.com/" target="_blank">슬랙 초대링크</a></p>
                     <p>/* TODO : 여기에 슬랙 통계 */</p>
                 </section>
                 <hr />
