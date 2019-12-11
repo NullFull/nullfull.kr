@@ -31,7 +31,7 @@ const Index = () => {
                 </section>
                 <hr />
                 <section>
-                    <h3>우리가 한 짓들</h3>
+                    <h3>우리가 한 짓들 <a href="https://github.com/nullfull" target="_blank">Github Link</a></h3>
                     <GitHubRepos />
                 </section>
                 <hr />
@@ -59,10 +59,10 @@ const Index = () => {
                         <li>
                             들어갈 내용 넣기
                             <ul>
-                                <li>슬랙 초대 링크</li>
+                                <li><strike>슬랙 초대 링크</strike> -> 완료</li>
                                 <li>페이스북 링크</li>
-                                <li>Github 링크</li>
-                                <li>프로젝트 목록</li>
+                                <li><strike>Github 링크</strike> -> 완료</li>
+                                <li><strike>프로젝트 목록</strike> -> 완료</li>
                                 <li>하고 싶은 주제</li>
                             </ul>
                         </li>
