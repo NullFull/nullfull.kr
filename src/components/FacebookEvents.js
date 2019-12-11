@@ -18,7 +18,7 @@ const FacebookEvents = () => {
         <div>
             {events.map((event, i) => (
                 <li key={`event-${i}`}>
-                    <h3><a>{event.date}</a></h3>
+                    <h3><a href={event.url}>{event.date}</a></h3>
                     <p>{event.place}</p>
                 </li>
             ))}
