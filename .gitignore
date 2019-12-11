@@ -54,7 +54,6 @@ node_modules/
 .serverless/
 
 # lock files
-yarn.lock
 package-lock.json
 
 # starters are special; we want to persist the lock files
