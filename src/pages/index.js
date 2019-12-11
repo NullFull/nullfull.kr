@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../assets/nullfull-logo.svg'
 import GitHubRepos from '../components/GitHubRepos.js'
 import './style.css'
 
@@ -9,7 +10,7 @@ const Index = () => {
             <header>
                 <h3>이 웹사이트는 리뉴얼 중이랍니다.</h3>
                 <h1>
-                    <img src="/static/nullfull-logo.svg" alt="nullfull-logo"></img>
+                    <img src={Logo} alt="nullfull-logo"></img>
                 </h1>
                 <p><strike>하는 일 없이</strike> 모여서 감자튀김 먹는 모임</p>
             </header>
