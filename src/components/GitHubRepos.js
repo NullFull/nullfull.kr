@@ -20,8 +20,8 @@ const GitHubRepos = () => {
                     <li key={repo.id}>
                         <a href={repo.html_url}>
                             <h3>{repo.name}</h3>
-                            <p>{repo.description}</p>
                         </a>
+                        <p>{repo.description}</p>
                     </li>
                 ))}
             </ul>
