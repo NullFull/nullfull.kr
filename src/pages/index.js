@@ -1,15 +1,17 @@
 import React from 'react'
+import Logo from '../assets/nullfull-logo.svg'
 import GitHubRepos from '../components/GitHubRepos.js'
 import './style.css'
 
 
 const Index = () => {
+    const year = new Date().getFullYear();
     return (
         <div>
             <header>
                 <h3>이 웹사이트는 리뉴얼 중이랍니다.</h3>
                 <h1>
-                    <img src="/static/nullfull-logo.svg" alt="nullfull-logo"></img>
+                    <img src={Logo} alt="nullfull-logo"></img>
                 </h1>
                 <p><strike>하는 일 없이</strike> 모여서 감자튀김 먹는 모임</p>
             </header>
@@ -20,6 +22,7 @@ const Index = () => {
                 </section>
                 <hr />
                 <section>
+                    <h2><a href="https://www.facebook.com/groupnullfull/" target="_blank">Facebook NullFull 그룹페이지</a></h2>
                     <h3>다음 모임 공지</h3>
                     <p>/* TODO : 여기에 다음 이벤트 공지를 페이스북에서 긁어와서 표시 */</p>
                 </section>
@@ -31,7 +34,7 @@ const Index = () => {
                 </section>
                 <hr />
                 <section>
-                    <h3>우리가 한 짓들</h3>
+                    <h3>우리가 한 짓들 <a href="https://github.com/nullfull" target="_blank">Github Link</a></h3>
                     <GitHubRepos />
                 </section>
                 <hr />
@@ -59,10 +62,10 @@ const Index = () => {
                         <li>
                             들어갈 내용 넣기
                             <ul>
-                                <li>슬랙 초대 링크</li>
-                                <li>페이스북 링크</li>
-                                <li>Github 링크</li>
-                                <li>프로젝트 목록</li>
+                                <li><strike>슬랙 초대 링크</strike> -> 완료</li>
+                                <li><strike>페이스북 링크</strike> -> 완료</li>
+                                <li><strike>Github 링크</strike> -> 완료</li>
+                                <li><strike>프로젝트 목록</strike> -> 완료</li>
                                 <li>하고 싶은 주제</li>
                             </ul>
                         </li>
@@ -70,7 +73,7 @@ const Index = () => {
                 </section>
             </main>
             <footer>
-                <p>All Right Reserved? 2019. NullFull. </p>
+                <p>All Right Reserved © {year} NullFull </p>
             </footer>
         </div>
     )
