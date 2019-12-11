@@ -2,49 +2,33 @@ import fetch from 'node-fetch'
 import {parse} from 'node-html-parser'
 
 
-const BASE_URL = 'https://m.facebook.com'
-
-
-const parseEvent = async path => {
-    const url = BASE_URL + path
-    const response = await fetch(url)
-    const html = await response.text()
-    const doc = parse(html)
-    const summary = doc.querySelector('#event_summary')
-    const tables = summary.querySelectorAll('table')
-    const [date, place] = tables.map(table => {
-        const cells = table.querySelectorAll('td')
-        const valueEl = cells[1].querySelector('dt')
-        return valueEl.text
-    })
-
-    return new Promise((resolve, reject) => {
-        resolve({url, date, place})
-    })
-}
-
-
-const parsePages = async path => {
-    const response = await fetch(BASE_URL + path)
-    const html = await response.text()
-    const doc = parse(html)
-    const links = doc.querySelectorAll('a')
-    const eventLinks = links.filter(link => link.attributes.href && link.attributes.href.startsWith('/events/'))
-    const events = await Promise.all(eventLinks.map(link => parseEvent(link.attributes.href)))
-    return new Promise(((resolve, reject) => {
-        resolve(events)
-    }))
-}
-
-
 export async function handler (event, context, callback) {
-    const events = await parsePages('/groupnullfull/events/')
+    const response = await fetch('https://iphone.facebook.com/groupnullfull/events?locale=ko_KR')
+    const html = await response.text()
+    const doc = parse(html)
+    const upcoming = doc.querySelectorAll('._5zma ._55ws._5cqg._5cqi')
+
+    const events = upcoming.map(event => {
+        const path = event.querySelector('a').attributes.href
+        const url = 'https://facebook.com' + path
+        const title = event.querySelector('._592p').text
+        const month = event.querySelector('._1e39').text
+        const day = event.querySelector('._1e3a').text
+
+        const infos = event.querySelectorAll('._52jc._5d19')
+        const time = infos[0].text
+        const place = infos[1].text
+
+        return {
+            url, title, month, day, time, place
+        }
+    })
 
     callback(null, {
         statusCode: 200,
         headers: {},
         body: JSON.stringify({
-            events
+            events: events
         })
     })
 }
