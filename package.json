@@ -1,6 +1,15 @@
 {
+  "scripts": {
+    "lambda": "netlify-lambda serve src/functions",
+    "build": "yarn build:client && yarn build:server",
+    "build:client": "gatsby build",
+    "build:server": "netlify-lambda build src/functions"
+  },
   "dependencies": {
     "gatsby": "^2.15.20",
+    "netlify-lambda": "^1.6.3",
+    "node-fetch": "^2.6.0",
+    "node-html-parser": "^1.1.16",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   }
