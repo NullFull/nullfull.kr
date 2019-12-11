@@ -5,6 +5,7 @@ import './style.css'
 
 
 const Index = () => {
+    const year = new Date().getFullYear();
     return (
         <div>
             <header>
@@ -72,7 +73,7 @@ const Index = () => {
                 </section>
             </main>
             <footer>
-                <p>All Right Reserved? 2019. NullFull. </p>
+                <p>All Right Reserved © {year} NullFull </p>
             </footer>
         </div>
     )
