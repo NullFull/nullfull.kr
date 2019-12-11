@@ -11,7 +11,7 @@ const Index = () => {
             <header>
                 <h3>이 웹사이트는 리뉴얼 중이랍니다.</h3>
                 <h1>
-                    <img src={Logo} alt="nullfull-logo"></img>
+                    <img src={Logo} alt="nullfull-logo" />
                 </h1>
                 <p><strike>하는 일 없이</strike> 모여서 감자튀김 먹는 모임</p>
             </header>
@@ -22,19 +22,20 @@ const Index = () => {
                 </section>
                 <hr />
                 <section>
-                    <h2><a href="https://www.facebook.com/groupnullfull/" target="_blank">Facebook NullFull 그룹페이지</a></h2>
                     <h3>다음 모임 공지</h3>
                     <p>/* TODO : 여기에 다음 이벤트 공지를 페이스북에서 긁어와서 표시 */</p>
+                    <p><a href="https://www.facebook.com/groupnullfull/" target="_blank">Facebook에서 구독하기</a></p>
                 </section>
                 <hr />
                 <section>
                     <h3>대화방 참여</h3>
-                    <p><a href="https://nullfull-slack-invite.herokuapp.com/" target="_blank">슬랙 초대링크</a></p>
+                    <p><a href="https://nullfull-slack-invite.herokuapp.com/" target="_blank">Slack에서 같이 떠들기</a></p>
                     <p>/* TODO : 여기에 슬랙 통계 */</p>
                 </section>
                 <hr />
                 <section>
-                    <h3>우리가 한 짓들 <a href="https://github.com/nullfull" target="_blank">Github Link</a></h3>
+                    <h3>우리가 한 짓들</h3>
+                    <p><a href="https://github.com/nullfull" target="_blank">GitHub에서 전체 보기</a></p>
                     <GitHubRepos />
                 </section>
                 <hr />
