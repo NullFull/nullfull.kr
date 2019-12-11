@@ -1,4 +1,5 @@
 import React from 'react'
+import GitHubRepos from '../components/GitHubRepos.js'
 import './style.css'
 
 
@@ -29,9 +30,7 @@ const Index = () => {
                 <hr />
                 <section>
                     <h3>우리가 한 짓들</h3>
-                    <ul>
-                        <li>/* TODO : 여기에 저장소 주소랑 설명 (깃헙에서 설명까지 읽어와서 붙이면 될 듯) */</li>
-                    </ul>
+                    <GitHubRepos />
                 </section>
                 <hr />
                 <section>
