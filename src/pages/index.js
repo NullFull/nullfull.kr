@@ -10,7 +10,9 @@ const Index = () => {
     return (
         <div>
             <header>
-                <h3>이 웹사이트는 리뉴얼 중이랍니다.</h3>
+                <h3 className="notice-container">
+                    <span className="notice-text">이 웹사이트는 리뉴얼 중이랍니다.</span>
+                </h3>
                 <h1>
                     <img src={Logo} alt="nullfull-logo" className="logo-image"/>
                 </h1>
