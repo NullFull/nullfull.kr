@@ -16,14 +16,16 @@ const FacebookEvents = () => {
 
     return (
         <div className="fb-event">
-            {events.map((event, i) => (
-                <li key={`event-${i}`}>
-                    <h3><a href={event.url}>{event.title}</a></h3>
-                    <p>{event.month} {event.day}</p>
-                    <p>{event.time}</p>
-                    <p>{event.place}</p>
-                </li>
-            ))}
+            <ul>
+                {events.map((event, i) => (
+                    <li key={`event-${i}`}>
+                        <h3><a href={event.url}>{event.title}</a></h3>
+                        <p>{event.month} {event.day}</p>
+                        <p>{event.time}</p>
+                        <p>{event.place}</p>
+                    </li>
+                ))}
+            </ul>
         </div>
     )
 }

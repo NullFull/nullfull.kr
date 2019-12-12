@@ -32,6 +32,10 @@ main section {
     padding: 10px;
 }
 
+.fb-event h3 {
+    display: inline;
+}
+
 footer {
     background: #808080;
     color: white;
