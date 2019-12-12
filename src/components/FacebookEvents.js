@@ -15,7 +15,7 @@ const FacebookEvents = () => {
     }, [])
 
     return (
-        <div>
+        <div className="fb-event">
             {events.map((event, i) => (
                 <li key={`event-${i}`}>
                     <h3><a href={event.url}>{event.title}</a></h3>

@@ -9,6 +9,10 @@ body {
     line-height: 1.6;
 }
 
+.logo-image {
+    width: 240px;
+}
+
 .lead-image {
     width: 612px;
     max-width: 100%;
@@ -26,10 +30,6 @@ main section {
     max-width: 420px;
     margin: 0 auto;
     padding: 10px;
-}
-
-ul li {
-
 }
 
 footer {

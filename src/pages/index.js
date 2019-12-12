@@ -12,7 +12,7 @@ const Index = () => {
             <header>
                 <h3>이 웹사이트는 리뉴얼 중이랍니다.</h3>
                 <h1>
-                    <img src={Logo} alt="nullfull-logo" />
+                    <img src={Logo} alt="nullfull-logo" className="logo-image"/>
                 </h1>
                 <p><strike>하는 일 없이</strike> 모여서 감자튀김 먹는 모임</p>
             </header>
