@@ -59,6 +59,7 @@ const Index = () => {
                                 <li><strike>로고</strike></li>
                                 <li>리드 이미지 -> 감튀 사진 골라야함</li>
                                 <li><strike>푸터</strike></li>
+                                <li>깃헙 저장소 목록에 별 갯수랑 최근 업데이트 날짜 표시</li>
                                 <li>좀 예쁘게...ㅠ</li>
                             </ul>
                         </li>
