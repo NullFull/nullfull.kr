@@ -17,11 +17,14 @@ export async function handler (event, context, callback) {
 
         const infos = event.querySelectorAll('._52jc._5d19')
         const time = infos[0].text
-        const place = infos[1].text
 
-        return {
-            url, title, month, day, time, place
+        let data = {url, title, month, day, time}
+
+        if (infos.length > 1) {
+            data['place'] = infos[1].text
         }
+
+        return data
     })
 
     callback(null, {
