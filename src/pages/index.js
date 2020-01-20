@@ -1,6 +1,6 @@
 import React from 'react'
 import Logo from '../assets/nullfull-logo.svg'
-import Lead from '../assets/lead.jpg'
+import Lead from '../assets/lead.png'
 import GitHubRepos from '../components/GitHubRepos'
 import FacebookEvents from '../components/FacebookEvents'
 import './style.css'
