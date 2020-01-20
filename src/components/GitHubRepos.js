@@ -7,8 +7,10 @@ const GitHubRepos = () => {
     const fetchRepos = async () => {
         const response = await fetch(`https://api.github.com/orgs/nullfull/repos`)
         const data = await response.json()
+        data.sort((a, b) => b['stargazers_count'] - a['stargazers_count'])
         setRepos(data)
     }
+
     React.useEffect(() => {
         fetchRepos()
     }, [])
