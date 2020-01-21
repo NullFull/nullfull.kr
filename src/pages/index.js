@@ -3,6 +3,7 @@ import Logo from '../assets/nullfull-logo.svg'
 import Lead from '../assets/lead.jpg'
 import GitHubRepos from '../components/GitHubRepos'
 import FacebookEvents from '../components/FacebookEvents'
+import SlackStatistics from '../components/SlackStatistics'
 import './style.css'
 
 
@@ -34,7 +35,7 @@ const Index = () => {
                 <section>
                     <h3>대화방 참여</h3>
                     <p><a href="https://nullfull-slack-invite.herokuapp.com/" target="_blank">Slack에서 같이 떠들기</a></p>
-                    <p>/* TODO : 여기에 슬랙 통계 */</p>
+                    <SlackStatistics />
                 </section>
                 <hr />
                 <section>
