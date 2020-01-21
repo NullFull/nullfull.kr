@@ -17,6 +17,8 @@ export async function handler (event, context, callback) {
     callback(null, {
         statusCode: 200,
         headers: {},
-        body: JSON.stringify(results)
+        body: JSON.stringify(
+            Object.assign({}, ...results)
+        )
     })
 }
