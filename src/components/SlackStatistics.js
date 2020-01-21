@@ -9,7 +9,7 @@ const SlackStatistics = () => {
     const fetchStatistics = async () => {
         try {
             const response = await fetch(`/.netlify/functions/slackStatistics`)
-            const data = response.json()
+            const data = await response.json()
             setStatistics(data)
         } catch (e) {
             setHasError(true)
