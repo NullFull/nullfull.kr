@@ -4,6 +4,7 @@ import Lead from '../assets/lead.png'
 import GitHubRepos from '../components/GitHubRepos'
 import FacebookEvents from '../components/FacebookEvents'
 import SlackStatistics from '../components/SlackStatistics'
+import SlackInvite from '../components/SlackInvite'
 import './style.css'
 
 
@@ -34,8 +35,8 @@ const Index = () => {
                 <hr />
                 <section>
                     <h3>대화방 참여</h3>
-                    <p><a href="https://nullfull-slack-invite.herokuapp.com/" target="_blank">Slack에서 같이 떠들기</a></p>
                     <SlackStatistics />
+                    <SlackInvite />
                 </section>
                 <hr />
                 <section>
