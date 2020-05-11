@@ -8,7 +8,7 @@ const SlackInvite = () => {
     const invite = async email => {
         setLoading(true)
         try {
-            const response = await fetch('http://localhost:9000/.netlify/functions/slackInvite', {
+            const response = await fetch('/.netlify/functions/slackInvite', {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({email})
