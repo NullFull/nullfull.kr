@@ -28,18 +28,10 @@ const SlackInvite = () => {
         }
     }
 
-    if (loading) {
-        return (
-            <div>
-                <span>잠시만 기다려주세요</span>
-            </div>
-        )
-    }
-
     return (
         <div>
-            <input placeholder="E-MAIL" value={email} onChange={e => setEmail(e.target.value)} />
-            <button onClick={() => invite(email)}>초대</button>
+            <input placeholder="E-MAIL" value={email} onChange={e => setEmail(e.target.value)} disabled={loading} />
+            <button disabled={loading} onClick={() => invite(email)}>초대</button>
         </div>
     )
 }
