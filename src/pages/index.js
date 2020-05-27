@@ -34,9 +34,10 @@ const Index = () => {
                 </section>
                 <hr />
                 <section>
-                    <h3>대화방 참여</h3>
-                    <SlackStatistics />
+                    <h3>슬랙 대화방 참여</h3>
                     <SlackInvite />
+                    <h3>슬랙 대화방 통계</h3>
+                    <SlackStatistics />
                 </section>
                 <hr />
                 <section>
