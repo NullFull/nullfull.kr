@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Logo from '../assets/nullfull-logo.svg'
 import Lead from '../assets/lead.png'
 import GitHubRepos from '../components/GitHubRepos'
@@ -12,6 +13,9 @@ const Index = () => {
     const year = new Date().getFullYear();
     return (
         <div>
+            <Helmet>
+                <title>널채움</title>
+            </Helmet>
             <header>
                 <h3 className="notice-container">
                     <span className="notice-text">이 웹사이트는 리뉴얼 중이랍니다.</span>
