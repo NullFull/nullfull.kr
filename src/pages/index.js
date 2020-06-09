@@ -44,7 +44,7 @@ const Index = () => {
                     <SlackStatistics />
                 </section>
                 <hr />
-                <section>
+                <section className="project-list">
                     <h3>우리가 한 짓들</h3>
                     <p><a href="https://github.com/nullfull" target="_blank">GitHub에서 전체 보기</a></p>
                     <GitHubRepos />
