@@ -2,3 +2,11 @@
     command = "yarn build"
     publish = "public"
     functions = "functions"
+
+[[plugins]]
+package = "netilfy-plugin-a11y"
+
+  [plugins.inputs]
+  checkPaths = ['/']
+  resultMode = "warn"
+
