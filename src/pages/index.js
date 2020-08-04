@@ -1,20 +1,35 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import Logo from '../assets/nullfull-logo.svg'
 import Lead from '../assets/lead.png'
+import OGImage from '../assets/og.png'
 import GitHubRepos from '../components/GitHubRepos'
 import FacebookEvents from '../components/FacebookEvents'
 import SlackStatistics from '../components/SlackStatistics'
 import SlackInvite from '../components/SlackInvite'
+import {graphql} from 'gatsby'
+import {Helmet} from 'react-helmet'
 import './style.css'
 
 
-const Index = () => {
-    const year = new Date().getFullYear();
+const Index = ({data}) => {
+    const {site: {siteMetadata}} = data
+
+    const year = new Date().getFullYear()
+
     return (
         <div>
             <Helmet>
-                <title>널채움</title>
+                <title>{siteMetadata.title}</title>
+                <meta name="description" content={siteMetadata.description} />
+
+                <meta property="og:image" content={OGImage} />
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={siteMetadata.title} />
+                <meta property="og:description" content={siteMetadata.description} />
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:creator" content={siteMetadata.twitter} />
+                <meta property="twitter:description" content={siteMetadata.description} />
+                <meta property="twitter:title" content={siteMetadata.title} />
             </Helmet>
             <header>
                 <h3 className="notice-container">
@@ -58,3 +73,16 @@ const Index = () => {
 }
 
 export default Index
+
+export const query = graphql`
+query Query {
+  site {
+    siteMetadata {
+      title
+      description
+      url
+      twitter
+    }
+  }
+}
+`
