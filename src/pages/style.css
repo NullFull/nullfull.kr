@@ -12,7 +12,7 @@
     font-style: normal;
 }
 
-html, body, h1, h2, h3, div, ul, li, p {
+html, body, h1, h2, h3, div, ul, li, p, dt, dd {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -90,8 +90,19 @@ section + section {
     padding: 33px;
 }
 
+.section-facebook ul, li {
+    list-style: none;
+}
+
+.section-facebook .fb-event {
+    margin: 0 30px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
 .section-facebook .external-link {
-    margin-top: 10px;
+    margin-top: 16px;
 }
 
 .section-slack .invite-form {
@@ -125,6 +136,20 @@ section + section {
 
 .section-slack .statistics {
     margin-top: 20px;
+    overflow: hidden;
+}
+
+.section-slack .statistics dl {
+    margin: 0 auto;
+    width: 140px;
+}
+
+.section-slack .statistics dt {
+    float: left;
+}
+
+.section-slack .statistics dd {
+    text-align: right;
 }
 
 .section-project .github-repos {
