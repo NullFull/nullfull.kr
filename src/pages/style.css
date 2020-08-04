@@ -1,4 +1,16 @@
-@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff');
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
 
 html, body, div {
     padding: 0;
@@ -7,7 +19,7 @@ html, body, div {
 }
 
 body {
-    font-family: 'S-CoreDream-2ExtraLight';
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
     line-height: 1.6;
     word-break: keep-all;
 }
