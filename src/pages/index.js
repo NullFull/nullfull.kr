@@ -24,6 +24,7 @@ const Index = ({data}) => {
 
                 <meta property="og:image" content={OGImage} />
                 <meta property="og:type" content="website" />
+                <meta property="og:url" content={siteMetadata.url} />
                 <meta property="og:title" content={siteMetadata.title} />
                 <meta property="og:description" content={siteMetadata.description} />
                 <meta property="twitter:card" content="summary_large_image" />
@@ -38,7 +39,7 @@ const Index = ({data}) => {
                 <h1>
                     <img src={Logo} alt="nullfull-logo" className="logo-image"/>
                 </h1>
-                <p><strike>하는 일 없이</strike> 모여서 감자튀김 먹는 모임</p>
+                <p><del>하는 일 없이</del> 모여서 감자튀김 먹는 모임</p>
             </header>
             <hr />
             <main>
