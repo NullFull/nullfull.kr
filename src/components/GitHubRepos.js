@@ -16,7 +16,7 @@ const GitHubRepos = () => {
     }, [])
 
     return (
-        <div>
+        <div className="github-repos">
             <ul>
                 {repos.map(repo => (
                     <li key={repo.id}>
