@@ -1,7 +1,7 @@
 import React from 'react'
 import Logo from '../assets/nullfull-logo.svg'
-import Lead from '../assets/lead.png'
 import OGImage from '../assets/og.png'
+import LeadImage from '../components/LeadImage'
 import GitHubRepos from '../components/GitHubRepos'
 import FacebookEvents from '../components/FacebookEvents'
 import SlackStatistics from '../components/SlackStatistics'
@@ -37,7 +37,7 @@ const Index = ({ data }) => {
             </header>
             <main>
                 <section className="section-lead">
-                    <img src={Lead} alt="French fries" />
+                    <LeadImage />
                 </section>
                 <section className="section-facebook">
                     <h2 className="title">다음 모임 공지</h2>
