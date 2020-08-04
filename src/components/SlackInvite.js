@@ -10,8 +10,8 @@ const SlackInvite = () => {
         try {
             const response = await fetch('/.netlify/functions/slackInvite', {
                 method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({email})
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email })
             })
             const data = await response.json()
 
@@ -29,7 +29,7 @@ const SlackInvite = () => {
     }
 
     return (
-        <div>
+        <div className="invite-form">
             <input placeholder="E-MAIL" value={email} onChange={e => setEmail(e.target.value)} disabled={loading} />
             <button disabled={loading} onClick={() => invite(email)}>초대</button>
         </div>
