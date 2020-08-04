@@ -118,7 +118,7 @@ section + section {
     vertical-align: top;
     height: 32px;
     box-sizing: border-box;
-    border: 1px solid #A8ADB6;
+    border: 1px solid #393C42;
 }
 
 .section-slack .invite-form button {
@@ -127,9 +127,10 @@ section + section {
     right: 0;
     width: 55px;
     height: 32px;
-    background-color: #fff;
-    color: #45BED5;
+    background-color: #60D9EF;
+    color: #333;
     border: 1px solid #393C42;
+    border-radius: 4px;
     text-align: center;
     cursor: pointer;
 }
