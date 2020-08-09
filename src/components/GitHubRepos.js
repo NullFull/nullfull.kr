@@ -4,10 +4,7 @@ import React from 'react'
 const GitHubRepos = () => {
     const [repos, setRepos] = React.useState([])
 
-    const getDate = dateString => {
-        const date = new Date(dateString)
-        return date.getTime();
-    }
+    const getDate = dateString => new Date(dateString).getTime()
 
     const fetchRepos = async () => {
         const response = await fetch(`https://api.github.com/orgs/nullfull/repos`)
