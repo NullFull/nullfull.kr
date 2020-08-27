@@ -1,73 +1,202 @@
-@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff');
+@font-face {
+    font-family: 'S-CoreDream-2ExtraLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-2ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-html, body, div {
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, body, h1, h2, h3, div, ul, li, p, dt, dd {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'S-CoreDream-2ExtraLight';
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
     line-height: 1.6;
     word-break: keep-all;
 }
 
-.notice-container {
-    overflow: hidden;
-    white-space: nowrap;
+h1 {
+    font-size: 1.5rem;
 }
-.notice-text {
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+img {
     display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
+    vertical-align: top;
 }
-.notice-text:hover {
-    animation-play-state: paused;
+
+a, a:visited {
+    color: inherit;
+}
+
+.header {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 10px 44px;
+    height: 64px;
+    box-sizing: border-box;
+}
+
+.header-logo {
+    height: 44px;
 }
 
 .logo-image {
-    width: 240px;
+    width: 134px;
 }
 
-.lead-image {
-    max-width: 100%;
-    /*border: 1px solid black;*/
-    text-align: center;
-}
-
-.lead-image img {
-    max-width: 360px;
-}
-
-header {
-    /*height: 95px;*/
-    padding: 10px;
-    text-align: center;
-}
-
-main section {
+section {
     max-width: 420px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 20px;
+    text-align: center;
 }
 
-.project-list ul li {
+section .title {
+    margin-bottom: 15px;
+}
+
+section .external-link {
+    display: block;
+    font-size: 0.9rem;
+}
+
+section + section {
+    border-top: 1px solid #000;
+}
+
+.section-lead {
+    text-align: center;
+}
+
+.section-lead img {
+    max-width: 250px;
+    padding: 33px;
+}
+
+.section-facebook ul, li {
+    list-style: none;
+}
+
+.section-facebook .fb-event {
+    margin: 0 30px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.section-facebook .external-link {
+    margin-top: 16px;
+}
+
+.section-slack .invite-form {
+    position: relative;
+    margin: 0 14px;
+    padding: 0 60px 0 0;
+}
+
+.section-slack .invite-form input {
+    width: 100%;
+    display: inline-block;
+    padding: 5px 10px;
+    vertical-align: top;
+    height: 32px;
+    box-sizing: border-box;
+    border: 1px solid #393C42;
+}
+
+.section-slack .invite-form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 32px;
+    background-color: #60D9EF;
+    color: #333;
+    border: 1px solid #393C42;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.section-slack .statistics {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.section-slack .statistics dl {
+    margin: 0 auto;
+    width: 140px;
+}
+
+.section-slack .statistics dt {
+    float: left;
+}
+
+.section-slack .statistics dd {
+    text-align: right;
+}
+
+.section-project .github-repos {
+    margin: 30px 0 0 20px;
+}
+
+.section-project ul li {
     text-align: left;
     list-style-image: url(../assets/list-bullet.svg);
 }
-.project-list ul li.off {
+
+.section-project ul li.off {
     list-style-image: url(../assets/list-bullet-gr.svg);
 }
 
-.fb-event h3 {
-    display: inline;
+.section-project ul li + li {
+    margin-top: 10px;
+}
+
+.section-project ul li p {
+    padding: 10px 0;
+}
+
+.marquee-text {
+    background-color: #60D9EF;
+    padding: 16px 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.marquee-text p {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 20s linear infinite;
+}
+
+.marquee-text p:hover {
+    animation-play-state: paused;
 }
 
 footer {
     background: #767676;
-    color: white;
-    height: 180px;
+    color: #fff;
+    height: 80px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
