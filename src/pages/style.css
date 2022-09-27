@@ -90,21 +90,6 @@ section + section {
     padding: 33px;
 }
 
-.section-facebook ul, li {
-    list-style: none;
-}
-
-.section-facebook .fb-event {
-    margin: 0 30px;
-    padding: 20px;
-    border: 1px solid #000;
-    border-radius: 50%;
-}
-
-.section-facebook .external-link {
-    margin-top: 16px;
-}
-
 .section-discord .invite-form {
     position: relative;
     margin: 0 14px;

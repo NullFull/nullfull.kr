@@ -1,17 +1,13 @@
 {
   "scripts": {
-    "lambda": "netlify-lambda serve src/functions",
-    "build": "yarn build:client && yarn build:server",
-    "build:client": "gatsby build",
-    "build:server": "netlify-lambda build src/functions"
+    "build": "yarn build:client",
+    "build:client": "gatsby build"
   },
   "dependencies": {
     "gatsby": "^2.15.20",
     "gatsby-plugin-google-analytics": "^2.1.31",
     "gatsby-plugin-html-attributes": "^1.0.5",
     "gatsby-plugin-react-helmet": "^3.3.3",
-    "netlify-lambda": "^1.6.3",
-    "node-fetch": "^3.1.1",
     "node-html-parser": "^1.1.16",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
