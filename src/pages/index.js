@@ -4,8 +4,6 @@ import OGImage from '../assets/og.png'
 import LeadImage from '../components/LeadImage'
 import GitHubRepos from '../components/GitHubRepos'
 import FacebookEvents from '../components/FacebookEvents'
-import SlackStatistics from '../components/SlackStatistics'
-import SlackInvite from '../components/SlackInvite'
 import { graphql } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import './style.css'
@@ -45,13 +43,8 @@ const Index = ({ data }) => {
                     <FacebookEvents />
                     <a href="https://www.facebook.com/groupnullfull/" target="_blank" className="external-link">Facebook에서 구독하기</a>
                 </section>
-                <section className="section-slack">
-                    <h2 className="title">슬랙 대화방 참여</h2>
-                    <SlackInvite />
-                    <div className="statistics">
-                        <h2 className="title">슬랙 대화방 통계</h2>
-                        <SlackStatistics />
-                    </div>
+                <section className="section-discord">
+                    <a href="https://discord.gg/SfY3QsbnBR" target="_blank" className="external-link"><h2 className="title">디스코드 대화방 참여</h2></a>
                 </section>
                 <section className="section-project">
                     <h2 className="title">우리가 한 짓들</h2>

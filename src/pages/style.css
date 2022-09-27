@@ -105,13 +105,13 @@ section + section {
     margin-top: 16px;
 }
 
-.section-slack .invite-form {
+.section-discord .invite-form {
     position: relative;
     margin: 0 14px;
     padding: 0 60px 0 0;
 }
 
-.section-slack .invite-form input {
+.section-discord .invite-form input {
     width: 100%;
     display: inline-block;
     padding: 5px 10px;
@@ -121,7 +121,7 @@ section + section {
     border: 1px solid #393C42;
 }
 
-.section-slack .invite-form button {
+.section-discord .invite-form button {
     position: absolute;
     top: 0;
     right: 0;
@@ -135,21 +135,21 @@ section + section {
     cursor: pointer;
 }
 
-.section-slack .statistics {
+.section-discord .statistics {
     margin-top: 20px;
     overflow: hidden;
 }
 
-.section-slack .statistics dl {
+.section-discord .statistics dl {
     margin: 0 auto;
     width: 140px;
 }
 
-.section-slack .statistics dt {
+.section-discord .statistics dt {
     float: left;
 }
 
-.section-slack .statistics dd {
+.section-discord .statistics dd {
     text-align: right;
 }
 
